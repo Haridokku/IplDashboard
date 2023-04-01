@@ -1,0 +1,31 @@
+.list-item {
+  margin: 15px;
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo2 {
+  width: 80px;
+}
+.heading2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+}
+.description {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+}
+.status {
+  color: #e31a1a;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+}
+.onGettingWon {
+  color: #18ed66;
+}

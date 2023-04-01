@@ -1,0 +1,26 @@
+.latest-details-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e293b;
+}
+.venue-details {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  text-align: left;
+}
+.team {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.describe {
+  font-size: 15px;
+}
+.logo1 {
+  align-self: center;
+  width: 100px;
+}
+.innings {
+  text-align: right;
+}

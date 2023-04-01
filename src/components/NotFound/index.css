@@ -1,0 +1,12 @@
+.notFound-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.text {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+}

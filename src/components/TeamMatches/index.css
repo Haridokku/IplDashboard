@@ -1,0 +1,23 @@
+.match-details-container {
+  padding: 15px;
+  background-color: #a4261d;
+}
+.team-matches-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner {
+  width: 90%;
+}
+.latest-heading {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Bree Serif';
+  font-weight: bold;
+}
+.match-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
