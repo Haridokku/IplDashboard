@@ -2,11 +2,12 @@ import {Component} from 'react'
 
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
-
+import MatchCard from '../MatchCard'
 import LatestMatch from '../LatestMatch'
+
 import './index.css'
 
-class MatchCard extends Component {
+class TeamMatches extends Component {
   state = {
     latestMatchData: {},
     teamBanner: '',
@@ -23,7 +24,7 @@ class MatchCard extends Component {
     const {params} = match
     const {id} = params
     const response = await fetch(`https://apis.ccbp.in/ipl/${id}`)
-    const data = response.json()
+    const data = await response.json()
     console.log(data)
 
     const updateData = data.recent_matches.map(each => ({
@@ -96,4 +97,4 @@ class MatchCard extends Component {
     )
   }
 }
-export default MatchCard
+export default TeamMatches
