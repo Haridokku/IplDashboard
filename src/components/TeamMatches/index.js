@@ -43,19 +43,20 @@ class TeamMatches extends Component {
     console.log(updateData)
 
     const bannerDetails = data.team_banner_url
-    const latestMatchDetails = data.latest_match_details.map(each => ({
-      umpires: each.umpires,
-      result: each.result,
-      manOfTheMatch: each.man_of_the_match,
-      id: each.id,
-      date: each.date,
-      venue: each.venue,
-      competingTeam: each.competing_team,
-      competingTeamLogo: each.competing_team_logo,
-      firstInnings: each.first_innings,
-      secondInnings: each.second_innings,
-      matchStatus: each.match_status,
-    }))
+    const latestMatch = data.latest_match_details
+    const latestMatchDetails = {
+      umpires: latestMatch.umpires,
+      result: latestMatch.result,
+      manOfTheMatch: latestMatch.man_of_the_match,
+      id: latestMatch.id,
+      date: latestMatch.date,
+      venue: latestMatch.venue,
+      competingTeam: latestMatch.competing_team,
+      competingTeamLogo: latestMatch.competing_team_logo,
+      firstInnings: latestMatch.first_innings,
+      secondInnings: latestMatch.second_innings,
+      matchStatus: latestMatch.match_status,
+    }
     console.log(latestMatchDetails)
 
     this.setState({
