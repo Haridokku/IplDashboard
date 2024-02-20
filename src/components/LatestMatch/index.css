@@ -2,25 +2,66 @@
   display: flex;
   justify-content: space-around;
   background-color: #1e293b;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
 }
 .venue-details {
   font-family: 'Bree Serif';
   color: #ffffff;
-  text-align: left;
 }
 .team {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: bold;
 }
-.describe {
-  font-size: 15px;
-}
 .logo1 {
-  align-self: center;
-  width: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+.date {
+  font-size: 15px;
+  color: #ffffff;
+}
+.venue {
+  font-size: 15px;
+  color: #ffffff;
+}
+.result {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.describe {
+  font-size: 18px;
+  color: #ffffff;
 }
 .innings {
   text-align: right;
+  font-family: 'Bree Serif';
+}
+@media screen and (min-width: 768px) {
+  .team {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .date {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .venue {
+    font-size: 20px;
+  }
+  .result {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .logo1 {
+    width: 350px;
+    height: 250px;
+  }
 }
