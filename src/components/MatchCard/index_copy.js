@@ -1,25 +1,26 @@
 import './index.css'
 
 const MatchCard = props => {
-  const {matchCardDetails} = props
-  const {
-    result,
-    competingTeamLogo,
-    competingTeam,
+  const {matchDetails} = props
+  const {competingTeamLogo, competingTeam, matchStatus, result} = matchDetails
+  const getMatchStatusClassName = status =>
+    status === 'Won' ? 'match-won' : 'match-lost'
+  const matchStatusClassName = `match-status ${getMatchStatusClassName(
     matchStatus,
-  } = matchCardDetails
-  const checking = matchStatus === 'Won' ? 'onGettingWon' : ''
+  )}`
+
   return (
-    <li className="list-item">
+    <li className="match-item">
       <img
         src={competingTeamLogo}
+        className="competing-team-logo"
         alt={`competing team ${competingTeam}`}
-        className="logo2"
       />
-      <p className="heading2">{competingTeam}</p>
-      <p className="description">{result}</p>
-      <p className={`status ${checking}`}>{matchStatus}</p>
+      <p className="competing-team-name">{competingTeam}</p>
+      <p className="result">{result}</p>
+      <p className={matchStatusClassName}>{matchStatus}</p>
     </li>
   )
 }
+
 export default MatchCard
