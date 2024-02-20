@@ -15,6 +15,7 @@ class Home extends Component {
   getTeamsList = async () => {
     const response = await fetch('https://apis.ccbp.in/ipl')
     const data = await response.json()
+    console.log(data)
     const updatedData = data.teams.map(each => ({
       name: each.name,
       id: each.id,
@@ -24,33 +25,21 @@ class Home extends Component {
   }
 
   onLoading = () => (
-    <div testid="loader">
+    <div data-testid="loader">
       <Loader type="Oval" color="#ffffff" height={50} width={50} />
     </div>
   )
 
-  /*
-        id: each.id,
-      date: each.date,
-      venue: each.venue,
-      competingTeam: each.competing_team,
-      competingTeamLogo: each.competing_team_logo,
-      firstInnings: each.first_innings,
-      secondInnings: each.second_innings,
-      matchStatus: each.match_status,
-          console.log(data)
-    console.log(data.teams)
-     console.log(updatedData)
-      */
-
   onDisplayTeams = () => {
     const {teamsList} = this.state
     return (
-      <ul className="team-list">
-        {teamsList.map(each => (
-          <TeamCard key={each.id} teamDetails={each} />
-        ))}
-      </ul>
+      <div className="team-list-container">
+        <ul className="team-list">
+          {teamsList.map(each => (
+            <TeamCard key={each.id} teamDetails={each} />
+          ))}
+        </ul>
+      </div>
     )
   }
 
@@ -72,3 +61,17 @@ class Home extends Component {
   }
 }
 export default Home
+
+/*
+        id: each.id,
+      date: each.date,
+      venue: each.venue,
+      competingTeam: each.competing_team,
+      competingTeamLogo: each.competing_team_logo,
+      firstInnings: each.first_innings,
+      secondInnings: each.second_innings,
+      matchStatus: each.match_status,
+          console.log(data)
+    console.log(data.teams)
+     console.log(updatedData)
+      */
