@@ -1,7 +1,7 @@
 import './index.css'
 
 const LatestMatch = props => {
-  const {latestMatchData} = props
+  const {latestMatch} = props
   const {
     umpires,
     firstInnings,
@@ -12,14 +12,14 @@ const LatestMatch = props => {
     competingTeamLogo,
     venue,
     competingTeam,
-  } = latestMatchData
+  } = latestMatch
   return (
     <div className="latest-details-container">
       <div className="venue-details">
-        <h1 className="team">{competingTeam}</h1>
-        <p className="describe">{date}</p>
-        <p className="describe">{venue}</p>
-        <p className="describe">{result}</p>
+        <p className="team">{competingTeam}</p>
+        <p className="date">{date}</p>
+        <p className="venue">{venue}</p>
+        <p className="result">{result}</p>
       </div>
       <img
         src={competingTeamLogo}
