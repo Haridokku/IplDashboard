@@ -1,31 +1,67 @@
-.list-item {
-  margin: 15px;
-  background-color: #1e293b;
+.latest-details-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  background-color: #1e293b;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
 }
-.logo2 {
-  width: 80px;
-}
-.heading2 {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
+.venue-details {
   font-family: 'Bree Serif';
-}
-.description {
   color: #ffffff;
+}
+.team {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.logo1 {
+  width: 150px;
+  height: 150px;
+}
+
+.date {
   font-size: 15px;
-  font-weight: bold;
-  font-family: 'Bree Serif';
+  color: #ffffff;
 }
-.status {
-  color: #e31a1a;
+.venue {
+  font-size: 15px;
+  color: #ffffff;
+}
+.result {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.describe {
   font-size: 18px;
-  font-weight: bold;
+  color: #ffffff;
+}
+.innings {
+  text-align: right;
   font-family: 'Bree Serif';
 }
-.onGettingWon {
-  color: #18ed66;
+@media screen and (min-width: 768px) {
+  .team {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .date {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .venue {
+    font-size: 20px;
+  }
+  .result {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .logo1 {
+    width: 350px;
+    height: 250px;
+  }
 }
